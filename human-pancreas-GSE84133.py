@@ -1,6 +1,8 @@
+from geo_download import download
 from pathlib import Path
 
 geo_accession = "GSE84133"
+download(geo_accession)
 geo_data_dir = Path(f"geo_data/{geo_accession}/extracted")
 
 human_files = []
